@@ -1,8 +1,8 @@
 language: r
 before_install:
-- sudo apt-get remove -y libgdal1
-- sudo add-apt-repository -y ppa:ubuntugis/ubuntugis-unstable
-- sudo apt-get update -y
+# - sudo apt-get remove -y libgdal1
+# - sudo add-apt-repository -y ppa:ubuntugis/ubuntugis-unstable
+# - sudo apt-get update -y
 - mkdir -p $HOME/R/local
 - curl -O http://datacube.wu.ac.at/src/contrib/openNLPmodels.en_1.5-1.tar.gz
 - tar -C $HOME/R/local -xvf openNLPmodels.en_1.5-1.tar.gz
