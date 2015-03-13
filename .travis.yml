@@ -1,28 +1,16 @@
-language: c
+language: r
 before_install:
-- sudo apt-get update
-- curl -OL http://raw.github.com/craigcitro/r-travis/master/scripts/travis-tool.sh
-- chmod 755 ./travis-tool.sh
-- sudo mv /etc/apt/sources.list.d/pgdg-source.list* /tmp
 - sudo apt-get remove -y libgdal1
 - sudo add-apt-repository -y ppa:ubuntugis/ubuntugis-unstable
 - sudo apt-get update -y
-- ./travis-tool.sh install_aptget gdal-bin libgdal-dev libproj-dev
-- ./travis-tool.sh bootstrap
-install:
-- sudo apt-get install r-cran-rjava
-- export PATH="$HOME/pandoc:$PATH"
-- mkdir $HOME/pandoc
-- curl -O https://s3.amazonaws.com/rstudio-buildtools/pandoc-1.12.3.zip
-- unzip -j pandoc-1.12.3.zip pandoc-1.12.3/linux/debian/x86_64/pandoc -d $HOME/pandoc
-- chmod +x $HOME/pandoc/pandoc
-- pandoc --version
 - mkdir -p $HOME/R/local
 - curl -O http://datacube.wu.ac.at/src/contrib/openNLPmodels.en_1.5-1.tar.gz
 - tar -C $HOME/R/local -xvf openNLPmodels.en_1.5-1.tar.gz
-- ./travis-tool.sh r_install packrat
-- mkdir ~/.R
-- cp Makevars ~/.R
+apt_packages:
+- libgdal-dev
+- libproj-dev
+r_packages:
+- packrat
 script: 
 - make packrat
 - make all
@@ -37,5 +25,5 @@ deploy:
   skip_cleanup: true
 notifications:
   email:
-    on_success: always
+    on_success: change
     on_failure: always
