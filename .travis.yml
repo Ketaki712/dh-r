@@ -4,7 +4,6 @@ r_binary_packages:
   - RColorBrewer
   - RCurl
   - RWeka
-  - babynames
   - classInt
   - d3Network
   - devtools
@@ -17,11 +16,9 @@ r_binary_packages:
   - knitr
   - lubridate
   - magrittr
-  - mallet
   - maptools
   - openNLP
   - openNLPmodels.en
-  - packrat
   - plyr
   - rJava
   - rgdal
@@ -30,9 +27,11 @@ r_binary_packages:
   - tidyr
   - tm
 r_packages:
+  - babynames
+  - historydata
+  - mallet
   - rgeos
   - rmarkdown
-  - historydata
 r_github_packages:
   - hadley/stringr
   - lmullen/mullenMisc
