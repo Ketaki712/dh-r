@@ -334,12 +334,6 @@ Version: 1.5.3-1
 Hash: 390dcc94fac62d7ee3ba94d6978d4849
 Requires: rJava
 
-Package: openNLPmodels.en
-Source: source
-Version: 1.5-1
-Hash: 457ef6ad6001118004cc270477ff6e22
-SourcePath: ~/R/local/openNLPmodels.en
-
 Package: packrat
 Source: CRAN
 Version: 0.4.3
@@ -371,12 +365,6 @@ Source: CRAN
 Version: 1.4.1
 Hash: d3d77b083fd5485f674487aa23011ea7
 Requires: Rcpp, plyr, stringr
-
-Package: rgdal
-Source: CRAN
-Version: 0.9-1
-Hash: 37c635fde819a572a153bb22535ab5f0
-Requires: sp
 
 Package: rgeos
 Source: CRAN
