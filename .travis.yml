@@ -24,6 +24,7 @@ r_binary_packages:
   - rgdal
   - sp
   - stringi
+  - stringr
   - tidyr
   - tm
 r_packages:
@@ -33,8 +34,7 @@ r_packages:
   - rgeos
   - rmarkdown
 r_github_packages:
-  - hadley/stringr
-  - lmullen/mullenMisc
+  # - lmullen/mullenMisc
 script:
   - make all
 deploy:
