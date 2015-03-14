@@ -5,8 +5,9 @@ r_binary_packages:
 r_packages:
   - packrat
 script:
-  - make packrat
-  - make all
+  # - make packrat
+  # - make all
+  - make test-installed
 deploy:
   provider: s3
   access_key_id: AKIAI3ZE4DKSC6ID3RMA

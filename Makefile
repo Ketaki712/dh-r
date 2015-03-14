@@ -1,6 +1,9 @@
 HTML_FILES := $(patsubst %.Rmd, public/%.html ,$(wildcard *.Rmd))
 INCLUDE_FILES := $(wildcard include/*.html)
 
+list-installed :
+	R --slave -e "installed.packages()"
+
 all : public/build html
 
 html : $(HTML_FILES)

@@ -88,6 +88,11 @@ Source: CRAN
 Version: 1.0-6
 Hash: cb26464a8321628636b547518994c931
 
+Package: brew
+Source: CRAN
+Version: 1.0-6
+Hash: 9d92cc5ac60123fdb7b0daa3ae83bf99
+
 Package: caTools
 Source: CRAN
 Version: 1.17.1
@@ -116,6 +121,13 @@ Source: CRAN
 Version: 0.5.2.1
 Hash: 40805bc3243ace919f6198fd093aa548
 Requires: plyr, rjson, whisker
+
+Package: devtools
+Source: CRAN
+Version: 1.7.0
+Hash: 56919e22e0d3f7131e93bda1a869730e
+Requires: RCurl, digest, evaluate, httr, jsonlite, memoise, roxygen2,
+    rstudioapi, whisker
 
 Package: dichromat
 Source: CRAN
@@ -334,6 +346,12 @@ Version: 1.5.3-1
 Hash: 390dcc94fac62d7ee3ba94d6978d4849
 Requires: rJava
 
+Package: openNLPmodels.en
+Source: source
+Version: 1.5-1
+Hash: 457ef6ad6001118004cc270477ff6e22
+SourcePath: ~/R/local/openNLPmodels.en
+
 Package: packrat
 Source: CRAN
 Version: 0.4.3
@@ -366,6 +384,12 @@ Version: 1.4.1
 Hash: d3d77b083fd5485f674487aa23011ea7
 Requires: Rcpp, plyr, stringr
 
+Package: rgdal
+Source: CRAN
+Version: 0.9-1
+Hash: 37c635fde819a572a153bb22535ab5f0
+Requires: sp
+
 Package: rgeos
 Source: CRAN
 Version: 0.3-8
@@ -382,6 +406,17 @@ Source: CRAN
 Version: 0.5.1
 Hash: 2d87f70c12c5558c50c4b3587fc6f499
 Requires: caTools, htmltools, knitr, yaml
+
+Package: roxygen2
+Source: CRAN
+Version: 4.1.0
+Hash: 271ed55984feccbfac9a4c3a95e79fdf
+Requires: Rcpp, brew, digest, stringr
+
+Package: rstudioapi
+Source: CRAN
+Version: 0.2
+Hash: aa27b6b62b335717db16cb1de6336860
 
 Package: scales
 Source: CRAN
