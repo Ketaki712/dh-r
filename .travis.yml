@@ -1,13 +1,43 @@
 language: r
 r_binary_packages:
-  - rgdal
+  - maptools
+  - NLP
+  - openNLP
   - openNLPmodels.en
+  - rJava
+  - rgdal
+  - rgeos
+  - sp
 r_packages:
+  - RColorBrewer
+  - RCurl
+  - RWeka
+  - babynames
+  - classInt
+  - d3Network
+  - devtools
+  - dplyr
+  - ggmap
+  - ggplot2
+  - ggvis
+  - httr
+  - igraph
+  - knitr
+  - lubridate
+  - magrittr
+  - mallet
   - packrat
+  - plyr
+  - rmarkdown
+  - stringi
+  - tidyr
+  - tm
+r_github_packages:
+  - hadley/stringr
+  - lmullen/mullenMisc
+  - ropensci/historydata
 script:
-  # - make packrat
-  # - make all
-  - make test-installed
+  - make all
 deploy:
   provider: s3
   access_key_id: AKIAI3ZE4DKSC6ID3RMA
