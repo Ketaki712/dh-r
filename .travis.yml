@@ -1,13 +1,6 @@
 language: r
 r_binary_packages:
-  - maptools
   - NLP
-  - openNLP
-  - openNLPmodels.en
-  - rJava
-  - rgdal
-  - sp
-r_packages:
   - RColorBrewer
   - RCurl
   - RWeka
@@ -25,17 +18,24 @@ r_packages:
   - lubridate
   - magrittr
   - mallet
+  - maptools
+  - openNLP
+  - openNLPmodels.en
   - packrat
   - plyr
-  - rgeos
-  - rmarkdown
+  - rJava
+  - rgdal
+  - sp
   - stringi
   - tidyr
   - tm
+r_packages:
+  - rgeos
+  - rmarkdown
+  - historydata
 r_github_packages:
   - hadley/stringr
   - lmullen/mullenMisc
-  - ropensci/historydata
 script:
   - make all
 deploy:
