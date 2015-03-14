@@ -6,7 +6,6 @@ r_binary_packages:
   - openNLPmodels.en
   - rJava
   - rgdal
-  - rgeos
   - sp
 r_packages:
   - RColorBrewer
@@ -28,6 +27,7 @@ r_packages:
   - mallet
   - packrat
   - plyr
+  - rgeos
   - rmarkdown
   - stringi
   - tidyr
